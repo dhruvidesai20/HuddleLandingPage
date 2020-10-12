@@ -85,6 +85,10 @@ h1, h2, h3, h4, h5, h6{
 }
 
 /* Bottom Section */
+.bottom-section{
+  position: relative;margin-top: 10%;
+}
+
 .footer{
   background: hsl(192, 100%, 9%);
   color: #ffffff;
@@ -121,6 +125,17 @@ h1, h2, h3, h4, h5, h6{
   position: relative;
   bottom: -100%;
   right: -40%;
+}
+
+.overlap-box{
+  position: absolute;
+  bottom: 85%;
+  right: 27%;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 4%;
+  text-align: center;
+  box-shadow: 0 0 1px hsl(208, 11%, 55%), 0 0 2px hsl(208, 11%, 55%), 0 0 4px hsl(208, 11%, 55%);
 }
 
 @media (max-width:991px) {
@@ -167,5 +182,11 @@ h1, h2, h3, h4, h5, h6{
   .copyright{
     position: static;
     font-size: 1.5rem;
+  }
+  .overlap-box{
+    right: 3%;
+    bottom: 93%;
+    margin-bottom: 5%;
+    width: 95%;
   }
 }
